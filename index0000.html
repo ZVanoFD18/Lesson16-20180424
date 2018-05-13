@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson16-20180424</title>
+		<style media="screen">
+		body{
+			background-color: silver;
+		}
+		.grid{
+			/* display: grid; */
+			display: inline-grid;
+			grid-gap: 12px;
+			grid-template-areas:
+				'i1 i1 i2 i2'
+				'i1 i1 i3 i6'
+				'i4 i5 i5 i6'
+				'i4 i5 i5 i6';
+			background-color: black;
+			border: 10px solid black;
+			/* justify-items : center; */
+		}
+		.item1{
+			grid-area: i1;
+		}
+		.item2{
+			grid-area: i2;
+		}
+		.item3{
+			grid-area: i3;
+		}
+		.item4{
+			grid-area: i4;
+		}
+		.item5{
+			grid-area: i5;
+		}
+		.item6{
+			grid-area: i6;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="grid">
+			<img class="grid__item item1 grid__item__img1" src="images/img1.jpg" alt="img1">
+			<img class="grid__item item2 grid__item__img2" src="images/img2.jpg" alt="img2">
+			<img class="grid__item item3 grid__item__img3" src="images/img3.jpg" alt="img3">
+			<img class="grid__item item4 grid__item__img4" src="images/img4.jpg" alt="img4">
+			<img class="grid__item item5 grid__item__img5" src="images/img5.jpg" alt="img5">
+			<img class="grid__item item6 grid__item__img6" src="images/img6.jpg" alt="img6">
+		</div>
+	</body>
+</html>

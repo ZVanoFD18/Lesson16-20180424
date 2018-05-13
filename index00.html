@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson16-20180424</title>
+		<style media="screen">
+		body{
+			background-color: silver;
+		}
+		.grid{
+			display: grid;
+			/* display: inline-grid; */
+			width: 1712px;
+			height: 870px;
+			grid-gap: 12px;
+			grid-template-areas:
+				'i1 i1 i2 i2'
+				'i1 i1 i3 i6'
+				'i4 i5 i5 i6'
+				'i4 i5 i5 i6';
+			background-color: black;
+			border: 10px solid black;
+			justify-content: streth;
+		}
+		.img1{
+			grid-area: i1;
+		}
+		.img2{
+			grid-area: i2;
+		}
+		.img3{
+			grid-area: i3;
+		}
+		.img4{
+			grid-area: i4;
+		}
+		.img5{
+			grid-area: i5;
+		}
+		.img6{
+			grid-area: i6;
+		}
+		.grid__item *{
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 100%;
+		}
+		.grid__item__img1{
+			background-image: url('images/img1.jpg');
+		}
+		.grid__item__img2{
+			background-image: url('images/img2.jpg');
+		}
+		.grid__item__img3{
+			background-image: url('images/img3.jpg');
+		}
+		.grid__item__img4{
+			background-image: url('images/img4.jpg');
+		}
+		.grid__item__img5{
+			background-image: url('images/img5.jpg');
+		}
+		.grid__item__img6{
+			background-image: url('images/img6.jpg');
+		}
+		</style>
+	</head>
+	<body>
+		<div class="grid">
+			<div class="grid__item img1">
+				<div class="grid__item__img1"></div>
+			</div>
+			<div class="grid__item img2">
+				<div class="grid__item__img2"></div>
+			</div>
+			<div class="grid__item img3">
+				<div class="grid__item__img3"></div>
+			</div>
+			<div class="grid__item img4">
+				<div class="grid__item__img4"></div>
+			</div>
+			<div class="grid__item img5">
+				<div class="grid__item__img5"></div>
+			</div>
+			<div class="grid__item img6">
+				<div class="grid__item__img6"></div>
+			</div>
+		</div>
+	</body>
+</html>
